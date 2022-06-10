@@ -1,0 +1,166 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(./images/bg-mobile.png);
+    background-repeat: no-repeat;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+
+
+.card-one {
+    margin: 130px 25px 15px;
+    padding: 2.5rem;
+    border-radius: 10px 90px 10px 10px;
+    background-color:  hsl(228, 56%, 26%);
+}
+
+.folders {
+    display: flex;
+    gap: 15px;
+    margin: 25px 0 0;
+    padding: 0 4.5rem 0 0;
+}
+.icon-document {
+    padding: 10px 14px;
+    border-radius: 10px;
+    background-color: hsl(229, 57%, 11%)
+}
+.icon-folder {
+    display: flex;
+    align-items: center;
+    padding: 10px 14px;
+    border-radius: 10px;
+    background-color: hsl(229, 57%, 11%)
+}
+.icon-upload {
+    display: flex;
+    align-items: center;
+    padding: 10px 14px;
+    border-radius: 10px;
+    background-color: hsl(229, 57%, 11%)
+}
+
+.card-two {
+    margin: 10px 25px;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color:  hsl(228, 56%, 26%);
+}
+.paragraph {
+    text-align: center;
+    color:  white;
+}
+span {
+    font-weight: 700;
+}
+.outside-line {
+    margin: 15px 0 8px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: hsla(229, 57%, 11%, 0.5)
+}
+.inside-line {
+    position: relative;
+    top: 2.5px;
+    left: 2.4px;
+    width: 70%;
+    height: 15px;
+    border-radius: 10px;
+    background-color: hsl(335, 100%, 65%);
+}
+.circle {
+    position: relative;
+    top: 2.5px;
+    right: 2.5px;
+    float: right;
+    width: 11px;
+    height: 11px;
+    background-color: beige;
+    border-radius: 100%;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    color: beige;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.card-three {
+    display: flex;
+    align-items: center;
+    margin: -45px auto;
+    width: 150px;
+    height: 70px;
+    background-color:beige;
+    border-radius: 10px;
+}
+.foot {
+    position: relative;
+    left: 10%;
+    display: flex;
+    align-items: center;
+}
+.foot h1 {
+    font-size: 2rem;
+    padding-right: 10px;
+}
+.foot p {
+    font-size: 0.8rem;
+    color: gray;
+    font-weight:bold;
+}
+@media screen and (min-width:375px) {
+    body {
+        background-image:url(./images/bg-desktop.png);
+        background-repeat: no-repeat;
+        background-position-y: 220px;
+        background-color: hsl(229, 57%, 11%);
+
+
+    }
+    .container {
+        display: flex;
+    }
+    .card-one {
+        margin-left: 250px;
+    }
+    .card-two {
+        position:relative;
+        top: 165px;
+        width: 100%;
+        height: 150px;
+        margin-right: 100px;
+        padding-top: 40px;
+    }
+    .paragraph {
+        text-align: start;
+    }
+    .card-three {
+        position: relative;
+        top: 180px;
+        right: 290px;
+    }
+    .foot {
+        width: 200px;
+        display: flex;
+    }
+    .traingle {
+        position:relative;
+        top: 37px;    
+	    width: 0;
+	    height: 0;
+	    border-left: 50px solid transparent;
+	    border-right: 0px solid transparent;
+	    border-top: 50px solid beige;
+    }
+}
